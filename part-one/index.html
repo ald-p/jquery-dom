@@ -74,7 +74,29 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script>
-  // Add your code here!
+  /* Part 1 */
+  console.log("Let's get ready to party with jQuery!");
+  
+  $('article img').addClass('image-center');
+
+  $('article p').get(5).remove();
+
+  $('#title').css('font-size', `${Math.round(Math.random() * 100)}px`);
+
+  $('ol').append('<li>This is a new list item.</li>');
+
+  $('aside').empty().append(`<p>Sorry for this list's existence :(</p>`)
+
+  $('.form-control').on('keyup blur change', function(e) {
+    const r = $('.form-control').eq(0).val();
+    const g = $('.form-control').eq(1).val();
+    const b = $('.form-control').eq(2).val();
+   $('body').css('background-color', `rgb(${r},${g},${b})`);
+  })
+
+  $('.image-center').on('click',function() {
+    $('.image-center').remove()
+  })
 </script>
 </body>
 
