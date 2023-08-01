@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies!</title>
+</head>
+<body>
+  <form action="">
+    <div class="form-group">
+      <label for="" class="form-label">Title: </label>
+      <input type="text" class="form-input" id="title">
+    </div>
+    <span id="val-title"></span>
+    <div class="form-group">
+      <label for="" class="form-label">Rating: </label>
+      <input type="text" class="form-input" id="rating">
+    </div>
+    <span id="val-rating"></span>
+    <div class="form-group">
+      <label for="" class="form-label"></label>
+      <input type="submit" class="form-input" id="submit" value="Submit">
+    </div>
+  </form>
+
+  <button id="title-sort">Sort Title</button>
+  <button id="rating-sort">Sort Rating</button>
+  <div id="movie-list"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
